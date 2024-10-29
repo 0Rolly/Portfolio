@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="/Images/Website_Logo.png">
+    <link rel="stylesheet" href="/css/style_aboutme.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Rolly - About Me</title>
+  </head>
+  <body>
+  <script src="index.js"></script>
+<header>
+    <a href="#" class="welcome-main"></a>
+    <nav>
+        <a href="portfolio.html" class="">Home</a>
+        <a href="aboutme.html" class="active">About</a>
+        <a href="skills.html" class="">Skills</a>
+        <a href="education.html" class="">Education</a>
+    </nav>
+</header>
+<div class="custom-line4"></div>
+
+<section class="Home">
+    <div class="aboutme-img">
+        <img id="myImage"src="/Images/logo_pic_portfolio_1.png" alt="">
+    </div>
+    <div class="aboutme-text">
+        <h2><span class="span1" style="font-size: 5rem;">Hello</span>, i am</h2>
+        <h2>Casayas Rolly</h2>
+        <h2>I am an <span class="span2" style="font-size: 4rem;">Aspiring</span> software engineer</h2>
+    </div>
+    <div class="custom-line"></div>
+<div class="aboutme_title">
+  <h1>ABOUT ME</h1>
+</div>
+<div class="aboutme_body">
+  <h2><span class="span3">Who</span> am i ?</h2>
+</div>
+<div class="aboutme_body_paragraph" style="text-align:justify;">
+  <h2>My name is <span class="span4" style="font-size: 3rem;">Casayas Rolly</span>, and I am an aspiring software engineer </h2>
+  <h2>currently pursuing a Bachelor of Science in Information Technology (BSIT).</h2>
+  <h2>I chose this field because I have always been fascinated by technology and</h2>
+  <h2>its ability to solve real-world problems. My passion for coding and creating</h2>
+  <h2>innovative software solutions drives me to explore the ever-evolving tech </h2>
+  <h2>landscape. I believe that with the right education and skills, I can make </h2>
+  <h2>a meaningful impact in the industry and contribute to advancements </h2>
+  <h2>that improve people's lives.</h2>
+</div>
+<div class="aboutme_coding">
+  <img src="/Images/aboutme_coding.gif" height="500" width="500">
+</div>
+<div class="custom-line2"></div>
+<div class="aboutme_hobies">
+  <h1>HOBIES</h1>
+</div>
+<div class="hobies_pics">
+  <img src="/Images/website_pic1.png" alt="Sample Image" class="interactive_image1">
+</div>
+<div class="programming_hobby" id="blur">
+  <a href="#" class="prog_btn" onclick="toggle()">PROGRAMMING</a>
+</div>
+<div class="programming_languages">
+  <img src="/Images/prog_languages_500x500.png" alt="" height="500" width="500">
+</div>
+
+<div id="popup" class="popup">
+  <h1 style="text-align:center;">Proggramming Hobby</h1>
+  <h3 style="text-align:justify;" class="body_prog">I am still learning new things every day, and even though I almost failed,
+     I’m determined to keep trying. I’ve enjoyed learning HTML, and despite the challenges
+      I faced in my first year with no prior programming knowledge, I pushed through. It was tough, 
+      but the journey has been rewarding, and I look forward to growing my skills as I advance further in 
+      my studies.</h3>
+  <br>
+  <img src="/Images/prog_hobby.gif" height="200" width="350">
+  <h3 class="languages" style="text-align:justify;">
+    I’m learning Python for data structures,<br>
+    Java for object-oriented programming,<br>
+    and exploring web development with <br>
+    HTML, CSS, and JavaScript. These skills <br>
+    are helping me grow as a developer.
+  </h3>
+  
+  <button onclick="toggle()" class="exit_button1">X</button>
+</div>
+<script type="text/javascript">
+ function toggle() {
+    console.log("Popup toggled"); // Check if the function runs
+    var blur = document.getElementById('blur');
+    var popup = document.getElementById('popup');
+    
+    blur.classList.toggle('active'); // Toggle blur effect
+    popup.classList.toggle('active'); // Toggle popup visibility
+}
+</script>
+<div class="games_hobby" id="blur-games">
+  <a href="#" class="games_btn" onclick="toggleGames()">GAMES</a>
+</div>
+<div class="game-lists">
+  <img src="/Images/game-list-500x500.png" alt="" height="500" width="500">
+</div>
+
+<div id="popup-games" class="popup">
+  <h1 class="gaming-hobby-title" style="text-align: center;">Gaming Hobby</h1>
+  <h3 style="text-align: justify;" >I play games because they help me relax and calm down. It's a different kind of enjoyment that lets me escape from everyday stress, and most importantly, I play to have fun and enjoy the experience.</h3>
+  <img src="/Images/games_hobby.gif" height="250" width="450">
+
+  <button onclick="toggleGames()" class="exit_button2">X</button>
+</div>
+<script>
+  function toggleGames() {
+    console.log("Games Popup toggled");
+    var blurGames = document.getElementById('blur-games');
+    var popupGames = document.getElementById('popup-games');
+
+    blurGames.classList.toggle('active');  // Toggle blur effect
+    popupGames.classList.toggle('active'); // Toggle popup visibility
+}
+</script>
+<div class="hobies_pics">
+  <img src="/Images/website_pic2.png" alt="Sample Image" class="interactive_image2">
+</div>
+<div class="entertainment_hobby" id="blur-entertainment">
+  <a href="#" class="entertainment_btn" onclick="toggleEntertainment()">ENTERTAINMENT</a>
+</div>
+<div class="entertainment-lists">
+  <img src="/Images/entertainment-list-500x500.png" alt="" height="500" width="500">
+</div>
+
+<div id="popup-entertainment" class="popup">
+  <h1 class="entertainment-hobby-title" style="text-align: center;">Entertainment Hobby</h1>
+  <h3 style="text-align: justify;">
+    I enjoy movies, music, and online shows to relax and take a break from daily routines. 
+    Entertainment helps me recharge and sparks creativity in my work.
+  </h3>
+  <img src="#" height="250" width="450">
+  
+  <button onclick="toggleEntertainment()" class="exit_button3">X</button>
+</div>
+<script>
+  function toggleEntertainment() {
+    console.log("Entertainment Popup toggled");
+    var blurEntertainment = document.getElementById('blur-entertainment');
+    var popupEntertainment = document.getElementById('popup-entertainment');
+
+    blurEntertainment.classList.toggle('active');  // Toggle blur effect
+    popupEntertainment.classList.toggle('active'); // Toggle popup visibility
+}
+</script>
+<!-- <div class="entertainment_pics">
+  <img src="website_interactive-image1.png" alt="Sample Image" class="interactive_image3">
+  <img src="website_interactive-image2.png" alt="Sample Image" class="interactive_image4">
+</div>
+  <img src="website_interactive-image3.png" alt="Sample Image" class="interactive_image5"> -->
+  <div class="image-group">
+    <img src="/Images/website_interactive-image1.png" alt="Sample Image" class="interactive_image back-image">
+    <img src="/Images/website_interactive-image2.png" alt="Sample Image" class="interactive_image back-image">
+    <img src="/Images/website_interactive-image3.png" alt="Sample Image" class="interactive_image front-image">
+  </div>
+<div class="custom-line3"></div>
+<div class="aboutme_contacts">
+  <h1>CONTACTS</h1>
+  <h2 class="socials">Social Media</h2>
+  <h2 class="gmail">Gmail</h2>
+  <p class="gmail-list">
+    <i class="fas fa-envelope"></i> casayasrolly@gmail.com
+  </p>
+  <p class="gmail-list">
+    <i class="fas fa-envelope"></i> chanbaqz@gmail.com
+  </p>
+  <h2 class="location">Location</h2>
+  <p class="location-list">
+    <i class="fas fa-map-marker-alt"></i>
+  </p>
+  <p class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.3442620024184!2d123.9094051854549!3d10.301153052226134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999675a8ba46b%3A0x2e2da386774fe09a!2s1%20Villagonzalo%20St%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1729590402642!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </p>
+</div>
+<div class="social-icons">
+  <a href="#"><i class="fa-brands fa-discord"></i></a>
+  <a href="#"><i class="fa-brands fa-github"></i></a>
+  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+<div class="custom-line4"></div>
+<div class="more_info">
+  <h1>MORE INFO ABOUT ME</h1>
+</div>
+
+
+</section>
+  </body>
+</html>
+

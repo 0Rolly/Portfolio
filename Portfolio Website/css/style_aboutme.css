@@ -1,0 +1,707 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-image: url('/Images/aboutme_background.png'); 
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment:scroll;
+    color: white;
+    padding-top: 550px;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center; /* Center the nav links horizontally */
+    align-items: center; /* Aligns the nav links vertically if needed */
+    background-color: transparent;
+    padding: 1rem; /* Adjust padding for better spacing */
+    width: 100%; /* Make sure the nav stretches the full width */
+    box-sizing: border-box;
+    position: fixed; /* Keep the nav fixed to the top */
+    top: 0; /* Fix it to the top */
+    left: 0; /* Ensure no left offset */
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 2rem; /* Use margin to space links evenly */
+    font-weight: 500;
+    padding: 1rem 2rem; /* Adjust padding for a better click area */
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+}
+
+nav a:hover {
+    color: lightcoral;
+    border-bottom: 3px solid lightcoral;
+}
+
+nav a:active {
+    transform: scale(1.2);
+    color: limegreen;
+    border-bottom: 3px solid limegreen;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 50rem;
+    padding-bottom: 50rem;
+    padding-top: 360%;
+    height: auto;
+    background-color: transparent;
+}
+
+.aboutme-text{
+    display: flex;
+    flex-direction: column; 
+    font-size: 2.3rem;
+    position: relative;
+    right: 250px;
+    bottom: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.span1 {
+    color:aquamarine;
+}
+.span2 {
+    color:aquamarine;
+}
+
+@keyframes upDown {
+    0% { transform: translateY(0); }   /* Start at original position */
+    50% { transform: translateY(-10px); } /* Move 20px up */
+    100% { transform: translateY(0); }  /* Back to original position */
+}
+
+.span3 {
+    font-size: 10rem;
+    color: rgb(92, 198, 247);
+    font-weight: 700;
+    text-align: center;
+    display: inline-block; /* Ensures the element can transform correctly */
+    animation: upDown 2s ease-in-out infinite; /* Apply animation */
+}
+.span4 {
+    transition: transform 0.3s ease;
+    color: rgb(92, 198, 247);
+    cursor: default;
+    transform: scale(1); /* Default scale */
+}
+
+.span4:hover {
+    transform: scale(1.1); /* Scale on hover */
+}
+/*.aboutme-text:hover{
+    color: white;
+    cursor:default;
+    transform: scale(1.1);
+    transition:ease-in-out;
+}*/
+
+.custom-line {
+    height: 5px; /* Thickness */
+    background-color:#bb8900; /* Line color */
+    width: 1000px; /* Control width */
+    margin: 2rem auto; /* Center it horizontally */
+    border-radius: 5px; /* Optional: rounded edges */
+    position: relative;
+    bottom: 100px;
+}
+
+
+.aboutme-img{
+    border-radius: 50%;
+}
+
+.aboutme-img img{
+    position: relative;
+    top: 80px;
+    left: 340px;
+    width: 32vw;
+    border-radius: 40%;
+    box-shadow: 0 0 25px solid #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
+    
+}
+
+.aboutme-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.aboutme-img img:hover{
+    transform: scale3d(1.03);
+    background-color: #181717;
+    color: transparent;
+    box-shadow: 0 0 25px #f7da37;
+}
+
+.aboutme_title{
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 100px;
+}
+
+.aboutme_body{
+    position: relative;
+    left: 290px;
+    top: 100px;
+    font-size: 4rem;
+}
+.aboutme_body_paragraph{
+    position: relative;
+    left: 50;
+    top: 140px;
+    font-size: 1.4rem;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.aboutme_coding {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 2rem; 
+    padding: 1rem; 
+    background-color: #0e0d0d; 
+    border-radius: 10px;
+    position: relative;
+    right: 260px;
+    bottom: 490px;
+    animation: appear 1.5s ease-in-out; /* Use the correct animation */
+
+}
+
+.aboutme_coding img {
+    max-width: 100%; /* Prevents the image from overflowing */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 15px; /* Optional: round the image */
+    box-shadow: 0 4px 8px rgba(255, 219, 14, 0.5); /* Add a shadow effect */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.aboutme_coding img:hover {
+    transform: scale(1.1);
+}
+
+.custom-line2 {
+    height: 5px; /* Thickness */
+    background-color:#bb8900; /* Line color */
+    width: 1000px; /* Control width */
+    margin: 2rem auto; /* Center it horizontally */
+    border-radius: 5px; /* Optional: rounded edges */
+    position: relative;
+    bottom: 160px;
+}
+
+.aboutme_hobies{
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 150px;
+}
+
+.interactive_image1{
+    position: relative;
+    right: 290px;
+    bottom: 100px;
+    width: 100%;         
+    max-width: 500px;     
+    height: auto;       
+    display: block;      
+    margin: 0 auto;       
+    object-fit: contain;  
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+}
+
+.interactive_image1:hover {
+    transform: scale(1.1);
+}
+
+.prog_btn{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    position: relative;
+    bottom: 390px;
+    left: 250px;
+    background-color: #dda601;
+    border-radius: 40px;
+    padding: 0.1rem 1.4rem;
+    transition: 0.3s ease;
+    z-index: 3;
+
+}
+.programming_languages{
+    position: relative;
+    bottom: 490px;
+    left: 250px;
+}
+
+a.prog_btn:hover{
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #0e0d0d;
+    border-radius: 40px;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0.1rem 2.8rem;
+    box-shadow: 0 0 25px #ffffff;
+
+}
+
+
+#blur.active {
+    filter: blur(10px); /* Apply the blur when active */
+    pointer-events: none; /* Prevent interaction with blurred area */
+    user-select: none;
+}
+
+/* Popup box styling */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 550px;
+    padding: 50px;
+    background: white;
+    color: #0e0d0d;
+    box-shadow: 0 5px 30px rgba(0, 153, 255, 0.612);
+    border-radius: 10px;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0; /* Invisible initially */
+    transition: visibility 0s, opacity 0.5s ease;
+    z-index: 1000;
+}
+.popup h1{
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.exit_button1{
+    position: relative;
+    bottom: 635px;
+    left: 700px;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0.1rem 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0e0d0d;
+    color: white;
+    transition: 0.3s ease;
+}
+.exit_button1:hover{
+    color: rgb(244, 86, 86);
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0.1rem 1rem;
+}
+.popup img{
+    position: relative;
+    right: 35px;
+    bottom: 10px;
+}
+.popup h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.9rem;
+    top: 50;
+}
+.popup .body_prog{
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 10px;
+    top: -20px;
+}
+.popup .languages{
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 350px;
+    bottom: 200px;
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+
+/* Popup becomes visible and animated when active */
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.games_btn {
+    position: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    position: relative;
+    bottom: 630px;
+    left: -300px;
+    background-color: #dda601;
+    border-radius: 40px;
+    padding: 0.1rem 1.4rem;
+    transition: 0.3s ease;
+    z-index: 100; /* Lower than popup */
+}
+
+.games_btn:hover {
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #0e0d0d;
+    border-radius: 40px;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid white;
+    padding: 0.1rem 2.8rem;
+    box-shadow: 0 0 25px #ffffff;
+}
+.game-lists{
+    position: relative;
+    left: -300px;
+    bottom: 720px;
+}
+
+#popup-games {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    background: white;
+    color: #0e0d0d;
+    box-shadow: 0 5px 30px rgba(0, 153, 255, 0.612);
+    border-radius: 10px;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0; /* Invisible initially */
+    transition: visibility 0s, opacity 0.5s ease;
+    z-index: 2000; /* Higher than button */
+}
+
+#popup-games.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.exit_button2 {
+    background-color: black;
+    font-size: 2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 0.1rem 0.8rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 460px;
+    left: 50px;
+    transition: 0.3s ease;
+}
+.exit_button2:hover{
+    color: rgb(244, 86, 86);
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0.1rem 1rem;
+}
+
+#popup-games h1{
+    color: rgb(0, 0, 0);
+    bottom: 25px;
+}
+#popup-games img{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.interactive_image2 {
+    position: relative;
+    left: 250px; /* Adjust this value to move it to the right */
+    top: -1150px;        
+    max-width: 500px;           
+    display: block;      
+    margin: 0 auto;       
+    object-fit: contain;  
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+}
+
+.interactive_image2:hover {
+    transform: scale(1.1);
+}
+.entertainment_btn {
+    position: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    position: relative;
+    bottom: 1050px;
+    left: 300px;
+    background-color: #dda601;
+    border-radius: 40px;
+    padding: 0.1rem 1.4rem;
+    transition: 0.3s ease;
+    z-index: 100; /* Lower than popup */
+}
+
+.entertainment_btn:hover {
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #0e0d0d;
+    border-radius: 40px;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid white;
+    padding: 0.1rem 2.8rem;
+    box-shadow: 0 0 25px #ffffff;
+}
+
+.entertainment-lists{
+    position: relative;
+    bottom: 1150px;
+    left: 290px;
+}
+
+#popup-entertainment {
+  position: fixed; /* or absolute, depending on your layout */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  background: white;
+  color: #0e0d0d;
+  box-shadow: 0 5px 30px rgba(0, 153, 255, 0.612);
+  border-radius: 10px;
+  visibility: hidden; /* Hidden by default */
+  opacity: 0; /* Invisible initially */
+  transition: visibility 0s, opacity 0.5s ease;
+  z-index: 1000; /* Make sure this is higher than the z-index of other elements */
+}
+
+#popup-entertainment.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-group {
+    position: relative; /* Allows the child elements to be positioned relative to this container */
+    width: 300px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    right: 430px;
+    bottom: 1620px;
+    border-radius: 15px; 
+    transition: transform 0.3s ease;
+}
+.image-group:hover{
+    transform: scale(1.1);
+
+}
+  
+  .back-image {
+    position: absolute;
+    width: 500px; /* Adjust the size of the back images */
+    height: auto;
+    top: 0; /* Position the first image at the top */
+    left: 0; /* Align the images to the left */
+    z-index: 1; /* Ensure they are behind the front image */
+    border-radius: 15px; 
+
+  }
+  
+  .back-image:nth-child(2) {
+    top: 180px; /* Position the second image below the first */
+  }
+  
+  .front-image {
+    position: absolute;
+    width: 500px; /* Adjust the size of the front image */
+    height: auto;
+    top: 60px; /* Position it slightly in the middle */
+    left: 100px; /* Position it to the right to overlap */
+    z-index: 2; /* Bring it in front of the other images */
+    border-radius: 15px;   
+}
+
+.exit_button3 {
+    background-color: black;
+    font-size: 2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 0.1rem 0.8rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 435px;
+    left: 50px;
+    transition: 0.3s ease;
+}
+.exit_button3:hover{
+    color: rgb(244, 86, 86);
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0.1rem 1rem;
+}
+.custom-line3 {
+    height: 5px; /* Thickness */
+    background-color:#bb8900; /* Line color */
+    width: 1000px; /* Control width */
+    margin: 2rem auto; /* Center it horizontally */
+    border-radius: 5px; /* Optional: rounded edges */
+    position: relative;
+    bottom: 1700px;
+}
+
+.aboutme_contacts h1{
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 1700px;
+    left: 110px;
+}
+
+.aboutme_contacts .location{
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 1800px;
+    left: -190px;
+}
+.aboutme_contacts .location-list i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #b74b4b; /* Icon color */
+    font-size: 3.5rem; /* Icon size */
+    position: relative;
+    bottom: 1840px;
+    left: -230px;
+}
+.aboutme_contacts .socials{
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 1630px;
+    left: 350px;
+}
+.aboutme_contacts .gmail{
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 1500px;
+    left: 399px;
+}
+.aboutme_contacts .gmail-list {
+    position: relative;
+    bottom: 1500px;
+    left: 290px;
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+.aboutme_contacts .gmail-list i {
+    position: relative;
+    bottom: 0px;
+    left: -10px;
+    font-size: 2.4rem;
+    margin-right: 10px; /* Space between icon and text */
+    color: #b74b4b; /* Icon color */
+    font-size: 2.5rem; /* Icon size */
+    vertical-align: middle; /* Align icon with text */
+}
+.social-icons {
+   position: relative;
+   bottom: 2150px;
+   left: 260px;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    background-color: transparent;
+    border: 0.2rem solid ;
+    font-size: 2rem;
+    border-radius: 10%;
+    margin: 0.5rem 0;
+    transition: 0.3s ease;
+    color: #ffffff;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0  0 25px #b74b4b;
+}
+.map{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 221, 4, 0.5); /* Add a shadow effect */
+    animation: appear 1.5s ease-in-out; /* Use the correct animation */
+    padding: 0.6rem; 
+    position: relative;
+    bottom: 1840px;
+    right: 320px;
+
+}
+.custom-line4 {
+    height: 5px; /* Thickness */
+    background-color:#bb8900; /* Line color */
+    width: 1000px; /* Control width */
+    margin: 2rem auto; /* Center it horizontally */
+    border-radius: 5px; /* Optional: rounded edges */
+    position: relative;
+    bottom: 1900px;
+}

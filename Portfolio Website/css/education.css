@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-image: url('/Images/aboutme_background.png'); 
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+}
+
+/* Header and nav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+}
+
+nav a:hover {
+    color: lightcoral;
+    border-bottom: 3px solid lightcoral;
+}
+.custom-line {
+    height: 5px;
+    background-color: transparent;
+    width: 80%;
+    max-width: 1000px;
+    margin: 70px auto 0 auto; /* Moves line down by 50px */
+    border-radius: 5px;
+}
+
+.elem-educ-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding-left: 60%;             /* Full viewport height */
+}
+
+.elem-educ-img img {
+    height: 450px;              /* Set a specific height */
+    width: auto;   
+}
+.elem-educ-header{
+    margin-top: -350px;         /* Moves h2 down */
+    margin-left: 200px;        /* Moves h2 to the right */
+    font-size: 2rem;        /* Adjust size if needed */
+    color: #ffffff;              /* Optional: change color */
+    font-weight: bolder;
+}
+.elem-educ-header p{
+    margin-left: -90px;        /* Moves h2 to the right */
+    margin-top: 10px;         /* Moves h2 down */
+
+}
+
+.custom-line {
+    height: 5px;
+    background-color: white;
+    width: 80%;
+    max-width: 1000px;
+    margin: 70px auto 0 auto; /* Moves line down by 50px */
+    border-radius: 5px;
+}
+/*----------------------------------------------------------------------------*/
+
+.jr-highschool-educ-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: right;
+    padding-left: -60%;             /* Full viewport height */
+}
+.jr-highschool-educ-img img{
+    height: 450px;              /* Set a specific height */
+    width: auto;  
+}
+.jr-highschool-educ-header{
+    margin-top: -350px;         /* Moves h2 down */
+    margin-left: 500px;        /* Moves h2 to the right */
+    font-size: 2rem;        /* Adjust size if needed */
+    color: #ffffff;              /* Optional: change color */
+    font-weight: bolder;
+}
+.jr-highschool-educ-header p{
+    margin-left: -120px;        /* Moves h2 to the right */
+    margin-top: 10px;         /* Moves h2 down */
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+.sr-highschool-educ-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: right;
+    padding-left: -60%;             /* Full viewport height */
+}
+.sr-highschool-educ-img img{
+    height: 450px;              /* Set a specific height */
+    width: auto;  
+}
+.sr-highschool-educ-header{
+    margin-top: -350px;         /* Moves h2 down */
+    margin-left: 500px;        /* Moves h2 to the right */
+    font-size: 2rem;        /* Adjust size if needed */
+    color: #ffffff;              /* Optional: change color */
+    font-weight: bolder;
+}
+.sr-highschool-educ-header p{
+    margin-left: -120px;        /* Moves h2 to the right */
+    margin-top: 10px;         /* Moves h2 down */
+}
+
+/*----------------------------------------------------------------------------*/
+
+.college-educ-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding-left: 60%;             /* Full viewport height */
+}
+
+.college-educ-img img {
+    height: 450px;              /* Set a specific height */
+    width: auto;   
+}
+.college-educ-header{
+    margin-top: -350px;         /* Moves h2 down */
+    margin-left: 100px;        /* Moves h2 to the right */
+    font-size: 2rem;        /* Adjust size if needed */
+    color: #ffffff;              /* Optional: change color */
+    font-weight: bolder;
+}
+.college-educ-header p{
+    margin-left: -70px;        /* Moves h2 to the right */
+    margin-top: 10px;         /* Moves h2 down */
+
+}
